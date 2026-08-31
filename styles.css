@@ -120,8 +120,30 @@ input {
 }
 
 .verified {
-  color: #2367b8;
-  font-size: 1rem;
+  display: inline-flex;
+  width: 19px;
+  height: 19px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.verified svg {
+  width: 100%;
+  height: 100%;
+  fill: url("#silver");
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.verified svg path:first-child {
+  fill: #aeb4b9;
+}
+
+.verified .check {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .location,
@@ -520,4 +542,14 @@ h2 {
     #e9ebed 100%
   );
   border-color: #ffffff;
+}
+.profile-photo {
+  width: 130px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
