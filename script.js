@@ -63,21 +63,63 @@ function addMessage(text, type = "") {
 }
 
 function getAutomaticReply(message) {
-  if (message.includes("contact") || message.includes("number")) {
-    return "You can copy my Smart or Globe number in the Contact section, or reach me through the social links.";
+  if (
+    message.includes("hi") ||
+    message.includes("hello") ||
+    message.includes("hey")
+  ) {
+    return "Hi! 👋 Welcome to my portfolio. You can ask me about my studies, skills, internship status, or contact details.";
   }
 
   if (
     message.includes("school") ||
     message.includes("study") ||
-    message.includes("course")
+    message.includes("course") ||
+    message.includes("university")
   ) {
     return "I am currently a first-year BS Computer Science student at the University of the Cordilleras.";
   }
 
-  if (message.includes("intern") || message.includes("ojt")) {
-    return "I am actively seeking an OJT or internship opportunity and would be happy to connect.";
+  if (
+    message.includes("skill") ||
+    message.includes("tech") ||
+    message.includes("programming")
+  ) {
+    return "I am currently learning HTML, CSS, JavaScript, responsive web design, and programming fundamentals. I am also interested in data engineering.";
   }
 
-  return "Thank you for your message! I am Sheyda, a Computer Science student from Baguio City. You may also use the contact links on this page.";
+  if (
+    message.includes("intern") ||
+    message.includes("ojt") ||
+    message.includes("work")
+  ) {
+    return "I am actively seeking an OJT or internship opportunity where I can learn, contribute, and gain real-world experience.";
+  }
+
+  if (
+    message.includes("contact") ||
+    message.includes("number") ||
+    message.includes("message") ||
+    message.includes("reach")
+  ) {
+    return "You can copy my Smart or Globe number in the Contact section, or message me through Facebook, Instagram, Telegram, or Messenger.";
+  }
+
+  if (
+    message.includes("location") ||
+    message.includes("from") ||
+    message.includes("baguio")
+  ) {
+    return "I am from Baguio City, Philippines.";
+  }
+
+  if (
+    message.includes("thank") ||
+    message.includes("okay") ||
+    message.includes("ok")
+  ) {
+    return "You’re welcome! Feel free to explore my portfolio or ask another question. 😊";
+  }
+
+  return "Thanks for your message! You can ask me about my studies, skills, internship availability, or how to contact me.";
 }
