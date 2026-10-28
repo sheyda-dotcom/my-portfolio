@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="shell top">
+    <header class="shell top" id="top"></header>
       <strong>Sheyda Palpal</strong>
       <a href="#contact">Get in touch</a>
     </header>
 
     <main class="shell">
       <section class="hero">
-       <img src="Picsart_26-08-30_22-02-28-410.jp" alt="Sheyda Palpal" class="profile-photo" /> 
-       
+      <img src="assets/Picsart_26-08-30_22-02-28-410.jpg" alt="Sheyda Palpal" class="profile-photo" />
+      
         <div>
           <h1 class="name">Sheyda Palpal <span class="verified" title="Profile badge" aria-label="Profile badge">
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -28,7 +28,9 @@
           <p class="subtitle">BS Computer Science Student · Aspiring Data Engineer</p>
 
           <div class="hero-actions">
-            <button class="btn btn-dark" aria-disabled="true" type="button">▣ Resume — Coming soon</button>
+            <a class="btn" href="assets/resume.docx" download>
+  ↓ Download Resume
+</a>
             <button class="btn" type="button" data-scroll="contact">✉ Contact me</button>
           </div>
         </div>
@@ -37,9 +39,9 @@
       <div class="grid">
         <section class="card">
           <h2>▣ About</h2>
-          <p>Hi! I’m Sheyda, a first-year Computer Science student at the University of the Cordilleras. I’m still early in my journey, but I’m excited to keep learning, creating, and figuring out where technology can take me.</p>
-          <p>Right now, I enjoy getting more comfortable with programming and exploring web development, design, and data. I like the feeling of taking something confusing at first and slowly making it work.</p>
-          <p>I’m looking for an OJT or internship opportunity where I can learn from people with real experience, contribute where I can, and grow along the way.</p>
+          <p>With a strong foundation in Computer Science from the University of the Cordilleras, I leverage tech literacy and logical analysis to streamline tasks, handle data with accuracy, and navigate modern digital workflows effortlessly.</p>
+          <p>I excel at bridging technical concepts with practical daily execution. I am eager to join a dynamic organization in a role where my digital adaptability, organizational skills, and clear communication can add immediate value.</p>
+          
         </section>
 
         <section class="card">
@@ -92,9 +94,18 @@
         <section class="card">
           <h2>◉ Portfolio space</h2>
           <div class="mini-list">
-            <div class="mini">Resume <small>Coming soon — add your resume here when ready.</small></div>
-            <div class="mini">Projects <small>Future project highlights will appear here.</small></div>
-            <div class="mini">Certifications <small>A space reserved for your achievements.</small></div>
+            <a class="mini" href="#top" id="resume-section-link">
+  Resume
+  
+</a>
+            <a class="mini project-open" href="#projects">
+  Projects
+  <small>View my projects.</small>
+</a>
+            <a class="mini" href="#gallery">
+  Gallery
+  <small></small>
+</a>
           </div>
         </section>
       </div>
@@ -111,9 +122,13 @@
         <div class="card">
           <div class="subhead">♧ Social links</div>
           <a class="link-row" href="https://www.facebook.com/share/1KX9Mk6Xzi/" target="_blank"><span class="icon">f</span>Facebook</a>
-          <a class="link-row" href="https://www.instagram.com/adyehss?igsi=MTVmYmx3MHAwMmJqbg" target="_blank"><span class="icon">◎</span>Instagram</a>
-          <a class="link-row" href="https://t.me/+639560072978" target="_blank"><span class="icon">✈</span>Telegram</a>
-          <a class="link-row" href="https://m.me/jeon.sd.2024" target="_blank"><span class="icon">✦</span>Messenger</a>
+          <a class="link-row" href="mailto:palpalsheyda@gmail.com">
+    <span class="icon">✉</span>
+    palpalsheyda@gmail.com
+  </a><a class="link-row" href="https://github.com/sheyda-dotcom" target="_blank">
+  <span class="icon">⌘</span>
+  GitHub
+</a>
         </div>
 
         <div class="card">
@@ -123,15 +138,106 @@
           <p class="copied">Tap a number to copy it.</p>
         </div>
       </section>
+      <section class="projects-workspace" id="projects">
+  <div class="workspace-heading">
+    <p>MY WORKSPACE</p>
+    <h2>Featured Projects</h2>
+    <span>Click Run Project to view each project.</span>
+  </div>
 
-      <section class="card gallery">
-        <h2>▧ Gallery</h2>
-        <div class="gallery-slots">
-          <div class="gallery-slot">Gallery image<br />coming soon</div>
-          <div class="gallery-slot">Gallery image<br />coming soon</div>
-          <div class="gallery-slot">Gallery image<br />coming soon</div>
-          <div class="gallery-slot">Gallery image<br />coming soon</div>
+  <div class="project-windows">
+    <!-- RADIX CALCULATOR -->
+    <article class="vscode-window">
+      <div class="vscode-bar">
+        <span class="dots">● ● ●</span>
+        <span>radix-calculator.js</span>
+      </div>
+
+      <div class="code-area">
+        <span class="line-number">1</span><code><span class="purple">const</span> project = <span class="green">"Radix Calculator"</span>;</code><br />
+        <span class="line-number">2</span><code></code><br />
+        <span class="line-number">3</span><code><span class="purple">function</span> <span class="yellow">convertRadix</span>() {</code><br />
+        <span class="line-number">4</span><code>  <span class="purple">return</span> <span class="green">"Convert number systems"</span>;</code><br />
+        <span class="line-number">5</span><code>}</code>
+      </div>
+
+      <div class="project-footer">
+        <div>
+          <h3>Radix Calculator</h3>
+          <p>Number-system conversion calculator.</p>
         </div>
+        <a class="run-project" href="https://github.com/sheyda-dotcom/radix-calculator" target="_blank">
+          ▶ Run Project
+        </a>
+      </div>
+    </article>
+
+    <!-- BITWISE CALCULATOR -->
+    <article class="vscode-window">
+      <div class="vscode-bar">
+        <span class="dots">● ● ●</span>
+        <span>bitwise-calculator.java</span>
+      </div>
+
+      <div class="code-area">
+        <span class="line-number">1</span><code><span class="purple">public class</span> <span class="yellow">BitwiseCalculator</span> {</code><br />
+        <span class="line-number">2</span><code>  <span class="purple">public static void</span> main() {</code><br />
+        <span class="line-number">3</span><code>    <span class="green">// Bitwise operations</span></code><br />
+        <span class="line-number">4</span><code>  }</code><br />
+        <span class="line-number">5</span><code>}</code>
+      </div>
+
+      <div class="project-footer">
+        <div>
+          <h3>Bitwise Calculator</h3>
+          <p>Calculator for bitwise operations.</p>
+        </div>
+        <a class="run-project" href="https://github.com/sheyda-dotcom/Bitwise-Calculator-App" target="_blank">
+          ▶ Run Project
+        </a>
+      </div>
+    </article>
+
+    <!-- SEVEN-SEGMENT DECODER -->
+    <article class="vscode-window">
+      <div class="vscode-bar">
+        <span class="dots">● ● ●</span>
+        <span>seven-segment-decoder.logic</span>
+      </div>
+
+      <div class="code-area">
+        <span class="line-number">1</span><code><span class="purple">project</span> = <span class="green">"7-Segment Decoder"</span>;</code><br />
+        <span class="line-number">2</span><code></code><br />
+        <span class="line-number">3</span><code><span class="green">// Logic gates simulation</span></code><br />
+        <span class="line-number">4</span><code><span class="blue">run</span> simulator;</code>
+      </div>
+
+      <div class="project-footer">
+        <div>
+          <h3>Seven-Segment Decoder</h3>
+          <p>Logic-gate circuit simulation.</p>
+        </div>
+        <a class="run-project" href="https://circuitverse.org/users/467339/projects/7-segment-decoder-using-logic-gates-c717ff4d-bdfa-4697-bca6-328e04b3ad67/simulator/edit" target="_blank">
+          ▶ Run Project
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+      <section class="card gallery" id="gallery"></section>
+        <h2>▧ Gallery</h2>
+        <div class="gallery-polaroids">
+  <figure class="polaroid">
+    <img src="assets/mom.jpg" alt="Sheyda hugging her mom" />
+    <figcaption>Me hugging my mom</figcaption>
+  </figure>
+
+  <figure class="polaroid">
+    <img src="assets/dad.jpg" alt="Sheyda giving her father a handshake" />
+    <figcaption>Me giving my father a handshake</figcaption>
+  </figure>
+</div>
       </section>
     </main>
 

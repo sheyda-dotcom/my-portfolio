@@ -81,3 +81,18 @@ function getAutomaticReply(message) {
 
   return "Thank you for your message! I am Sheyda, a Computer Science student from Baguio City. You may also use the contact links on this page.";
 }
+const resumeSectionLink = document.getElementById("resume-section-link");
+
+const downloadResumeButton = document.querySelector(
+  '.hero-actions a[href*="resume"]'
+);
+
+resumeSectionLink.addEventListener("click", () => {
+  setTimeout(() => {
+    downloadResumeButton.classList.add("resume-highlight");
+
+    setTimeout(() => {
+      downloadResumeButton.classList.remove("resume-highlight");
+    }, 2000);
+  }, 900);
+});

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap");
 
 :root {
@@ -552,4 +553,265 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.project-open {
+  display: block;
+  width: 100%;
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.projects-workspace {
+  margin: 30px 0 40px;
+  padding: 32px;
+  color: var(--ink);
+background: var(--panel);
+border: 1px solid rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(9px);
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
+}
+
+.workspace-heading p {
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.workspace-heading h2 {
+  margin-bottom: 5px;
+  color: var(--ink);
+}
+
+.workspace-heading span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.project-windows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.vscode-window {
+  overflow: hidden;
+  background: #1e1e1e;
+  border: 1px solid #4a4d52;
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+.vscode-bar {
+  display: flex;
+  gap: 12px;
+  padding: 11px 14px;
+  color: #d6d8dc;
+  font-family: Consolas, monospace;
+  font-size: 0.72rem;
+  background: #303136;
+  border-bottom: 1px solid #45474d;
+}
+
+.dots {
+  color: #f3a54c;
+  letter-spacing: 2px;
+}
+
+.code-area {
+  min-height: 155px;
+  padding: 18px 12px;
+  overflow-x: auto;
+  color: #d4d4d4;
+  font-family: Consolas, monospace;
+  font-size: 0.72rem;
+  line-height: 1.8;
+  white-space: nowrap;
+}
+
+.line-number {
+  display: inline-block;
+  width: 25px;
+  color: #777b83;
+  text-align: right;
+  user-select: none;
+}
+
+.purple { color: #c586c0; }
+.green { color: #6a9955; }
+.yellow { color: #dcdcaa; }
+.blue { color: #569cd6; }
+
+.project-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #252526;
+  border-top: 1px solid #3d3e42;
+}
+
+.project-footer h3 {
+  margin: 0 0 3px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.project-footer p {
+  margin: 0;
+  color: #aaaeb5;
+  font-size: 0.72rem;
+}
+
+.run-project {
+  padding: 9px 11px;
+  color: #111;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-decoration: none;
+  background: linear-gradient(135deg, #787e85, #f5f7f8, #949ba2);
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+.run-project:hover {
+  background: linear-gradient(135deg, #a0a6ab, #ffffff, #737a80);
+}
+
+@media (max-width: 850px) {
+  .project-windows {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .projects-workspace {
+    padding: 20px;
+  }
+}
+.mini:hover {
+  color: #111111;
+  background: linear-gradient(
+    135deg,
+    #777b80 0%,
+    #f8f9fa 22%,
+    #aeb2b6 42%,
+    #ffffff 55%,
+    #8b9095 78%,
+    #e9ebed 100%
+  );
+  border-color: #ffffff;
+  box-shadow:
+    0 5px 15px rgba(30, 35, 40, 0.38),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+.btn.resume-highlight {
+  color: #111111;
+  background: linear-gradient(
+    135deg,
+    #777b80 0%,
+    #f8f9fa 22%,
+    #aeb2b6 42%,
+    #ffffff 55%,
+    #8b9095 78%,
+    #e9ebed 100%
+  );
+  border-color: #ffffff;
+  box-shadow:
+    0 5px 15px rgba(30, 35, 40, 0.38),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+/* Makes Resume, Projects, and Gallery look like centered buttons */
+.mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 92px;
+  color: var(--ink);
+  font-family: Manrope, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mini small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+.gallery-polaroids {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  width: min(900px, 100%);
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.polaroid {
+  width: 100%;
+  margin: 0;
+  padding: 12px 12px 20px;
+  background: #fdfdfc;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.2),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.polaroid:first-child {
+  transform: rotate(-2deg);
+}
+
+.polaroid:last-child {
+  transform: rotate(2deg);
+}
+
+.polaroid:hover {
+  transform: translateY(-8px) rotate(0deg);
+  box-shadow:
+    0 18px 30px rgba(0, 0, 0, 0.28),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
+}
+
+.polaroid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.polaroid figcaption {
+  padding-top: 14px;
+  color: #222;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .gallery-polaroids {
+    grid-template-columns: 1fr;
+    width: min(360px, 100%);
+  }
 }
