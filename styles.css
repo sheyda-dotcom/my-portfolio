@@ -815,3 +815,24 @@ backdrop-filter: blur(9px);
     width: min(360px, 100%);
   }
 }
+/* Restores the top navigation position */
+header.shell.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1140px, calc(100% - 32px));
+  height: 70px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+header.shell.top a {
+  padding-bottom: 3px;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+}
